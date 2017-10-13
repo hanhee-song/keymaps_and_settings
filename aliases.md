@@ -9,6 +9,7 @@ alias sb="source ~/.bash_profile"
 
 # OPENING APPS
 alias a="atom ."
+alias o="open ."
 
 # NAVIGATION
 alias sl="ls"
@@ -19,6 +20,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias home="cd ~"
+alias push="pushd ."
+alias pop="popd"
+alias rm="rmtrash"
 
 # RUBY
 alias irb="pry"
