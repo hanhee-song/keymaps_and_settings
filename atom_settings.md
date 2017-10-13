@@ -65,22 +65,6 @@ Here are the powers that are granted to you by these keymaps:
 
 '.fuzzy-finder atom-text-editor[mini]':
   'tab': 'fuzzy-finder:invert-confirm'
-
-# Testing if I can just comment this all out
-# 'atom-workspace atom-text-editor:not([mini])':
-#   'ctrl-j': 'core:move-left'
-#   'ctrl-k': 'core:move-down'
-#   'ctrl-l': 'core:move-right'
-#   'ctrl-i': 'core:move-up'
-#   'ctrl-u': 'editor:move-to-first-character-of-line'
-#   'ctrl-o': 'editor:move-to-end-of-line'
-#   'ctrl-alt-j': 'editor:move-to-beginning-of-word'
-#   'ctrl-alt-l': 'editor:move-to-end-of-word'
-#   'ctrl-alt-i': 'core:move-up'
-#   'ctrl-alt-k': 'core:move-down'
-#   'shift-backspace': 'core:delete'
-#   'alt-shift-backspace': 'editor:delete-to-end-of-word'
-#   'shift-cmd-backspace': 'editor:delete-to-end-of-line'
   
 'atom-text-editor':
   'ctrl-j': 'core:move-left'
@@ -93,12 +77,12 @@ Here are the powers that are granted to you by these keymaps:
   'ctrl-alt-l': 'editor:move-to-end-of-word'
   'ctrl-alt-i': 'core:move-up'
   'ctrl-alt-k': 'core:move-down'
-  # the three backwards deletes. Testing their utility.
+  # the three backwards deletes.
   'shift-backspace': 'core:delete'
   'alt-shift-backspace': 'editor:delete-to-end-of-word'
   'shift-cmd-backspace': 'editor:delete-to-end-of-line'
-  # the following are experimental. Testing their utility.
-  # Day three of using them: haven't really used them...
+  # the following are experimental. Currently testing.
+  # They're not super helpful...
   'ctrl-shift-j': 'core:select-left'
   'ctrl-shift-k': 'core:select-down'
   'ctrl-shift-l': 'core:select-right'
