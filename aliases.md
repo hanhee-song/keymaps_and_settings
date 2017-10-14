@@ -10,6 +10,7 @@ alias sb="source ~/.bash_profile"
 # OPENING APPS
 alias a="atom ."
 alias o="open ."
+alias settings="atom ~/dev/atom_settings"
 
 # NAVIGATION
 alias sl="ls"
@@ -51,7 +52,7 @@ alias gr="git reset"
 alias author="git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';\" HEAD"
 
 # NPM
-alias npm.="npm install -s webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react redux react-redux redux-devtools"
+alias npm.="npm i --save webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react redux react-redux redux-devtools"
 
 # make `g` behave like `git status` with no args, or `git` with args
 g () {
