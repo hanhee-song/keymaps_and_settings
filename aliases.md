@@ -47,6 +47,8 @@ alias gcm="git commit -m"
 alias gp="git push"
 alias gl="git log"
 alias gc="git clone"
+alias gr="git reset"
+alias author="git filter-branch -f --env-filter "GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';" HEAD"
 
 # make `g` behave like `git status` with no args, or `git` with args
 g () {
