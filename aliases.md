@@ -42,7 +42,9 @@ alias rdbd="rails db:drop"
 alias rgc="rails g controller"
 
 # GIT
+alias gi="git init"
 alias gs="git status"
+alias ga="git add"
 alias ga.="git add ."
 alias gcm="git commit -m"
 alias gp="git push"
@@ -50,9 +52,10 @@ alias gl="git log"
 alias gc="git clone"
 alias gr="git reset"
 alias author="git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';\" HEAD"
+alias grm="git rm --cached"
 
 # NPM
-alias npm.="npm i --save webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react redux react-redux redux-devtools"
+alias npm.="npm install --save webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react redux react-redux redux-devtools lodash redux-thunk redux-logger"
 
 # make `g` behave like `git status` with no args, or `git` with args
 g () {
