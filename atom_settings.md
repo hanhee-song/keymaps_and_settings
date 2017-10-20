@@ -9,10 +9,11 @@ Tip 2: press cmd + , to access atom preferences
 ### Packages
 #### Community Packages
 * atom-beautify: great for those who aren't bothered to format their code perfectly the first time around. I don't use it myself.
+* file-icons: pretty icons!
 * highlight-selected: highlights all instances of the word currently selected. Helpful to know where a method/variable is being invoked, and assists in finding typos.
 * minimap: great for navigating large files
 * minimap-highlight-selected: a combination of the above two
-* multi-cursor: create new cursors by pressing option + up or option + down. Great time-saver.
+* multi-cursor: create new cursors by pressing option + up or option + down.
 * pigments: shows colors in CSS files
 * ruby-block: when you select an 'end', it shows the corresponding start of the block. Helpful for complicated nests.
   * Highlight Line Number: true
@@ -46,6 +47,8 @@ Here are the powers that are granted to you by these keymaps:
 * cmd-shift-t: this will reopen a tab if you accidentally closed it. You can invoke it multiple times in a row.
 * tab in fuzzy finder: when using cmd + t to find a file, pressing tab will select the file just like shift-enter.
 * shift-backspace: will now delete the next character rather than the previous character. (Believe me, this one is one of my most frequently used shortcuts.)
+  * shift-alt-backspace: deletes the next word
+  * shift-cmd-backspace: delets to the end of line
 * *movement commands*: the following can take a bit of time to adjust to, but are extremely rewarding when used proficiently.
   * ctrl-[ijkl]: when holding ctrl, you can use i, j, k, and l like arrow keys.
   * ctrl-[uo]: when holding ctrl, you can use u and o to go to the front or end of a line (like cmd-left and cmd-right).

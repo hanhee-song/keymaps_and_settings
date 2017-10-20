@@ -34,12 +34,15 @@ alias bi="bundle install"
 # RAILS
 alias rdbm="rails db:migrate"
 alias rdbc="rails db:create"
+alias rg="rails g"
 alias rgmg="rails g migration"
 alias rgmd="rails g model"
 alias rgm="rails g model"
 alias rdbr="rails db:reset"
 alias rdbd="rails db:drop"
 alias rgc="rails g controller"
+#KILL SERVER
+alias rk="kill -9 $(lsof -i tcp:3000 -t)"
 
 # GIT
 alias gi="git init"
