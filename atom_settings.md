@@ -28,10 +28,9 @@ Tip 2: press cmd + , to access atom preferences
 * autosave
   * enabled: true. This will make your life so much easier.
 * (Optional) whitespace:
-  * Ignore Whitespace Only Lines: true. When saving a file, any whitespace-only line will be ignored. Furthermore, creating new lines while at least one indent in will preserve spaces created on each previous line. This is just my preferred behavior, but it can leave a bit of a mess when used carelessly.
+  * Ignore Whitespace Only Lines: true. When saving a file, any whitespace-only line will be ignored. Furthermore, creating new lines while at least one indent in will preserve spaces created on each previous line. This is just my preferred behavior, but it will leave a bit of a mess when used carelessly.
 
 ### Core
-* (Optional) Close Deleted File Tabs: true. Not really crucial but kinda helpful when trashing a lot of things. Doesn't happen too often though, and it can be annoying when checking out branches.
 * Close Empty Windows: false. Makes it so that hitting cmd + W once too many times doesn't close all of atom.
 
 ### Editor
@@ -39,7 +38,7 @@ Tip 2: press cmd + , to access atom preferences
 * Show Indent Guide: true
 * Show Invisibles: true
 
-### Keybindings
+### Keybindings for the shortcut addict
 *Paste these settings into your keymap file, which is linked under Keybindings.*
 
 Here are the powers that are granted to you by these keymaps:

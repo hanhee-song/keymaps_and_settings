@@ -34,7 +34,6 @@ alias bi="bundle install"
 # RAILS
 alias rdbm="rails db:migrate"
 alias rdbc="rails db:create"
-alias rg="rails g"
 alias rgmg="rails g migration"
 alias rgmd="rails g model"
 alias rgm="rails g model"
