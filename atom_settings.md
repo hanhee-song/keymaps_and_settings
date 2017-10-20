@@ -1,8 +1,6 @@
 ### A list of all the settings and packages that I use
 
-Tip 1: press ctrl + shift + m to view this file in markdown.
-
-Tip 2: press cmd + , to access atom preferences
+Tip: press cmd + , to access atom preferences
 
 *All settings are default unless otherwise stated*
   

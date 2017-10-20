@@ -1,8 +1,6 @@
 # Atom Settings (and some extra aliases)
 
-This is a list of all the atom settings/packages that I use & strongly recommend. The atom settings file is very self-explanatory, so the below is all about the aliases.
-
-The aliases are optional. If you want the aliases, read the below.
+This is a list of all the atom settings/packages that I use & strongly recommend. The atom settings file is very self-explanatory, so the below is all about the aliases. Read the below if you want some mad terminal shortcuts.
 
 ## Aliases for the shortcut addict
 
