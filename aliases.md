@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Don't forget to log these updates in the
-# git thingy
-
 # SO META THAT YOU MAP THESE THINGS
 alias nb="atom ~/.aliases"
 alias sb="source ~/.bash_profile"
