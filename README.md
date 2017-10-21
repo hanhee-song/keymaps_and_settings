@@ -12,7 +12,7 @@ On the App Academy computers, running ```dt``` in terminal will bring you to the
 
 As part of the App Academy initial setup, you were probably instructed to do a few things in your native directory that you might not recall.
 
-Run ```atom ~/.bash_profile``` to open the bash profile. You should see the following.
+Run ```atom ~/.bash_profile``` to open the bash profile. You should see something like this.
 
 ```###
 # Do not place configuration here.
@@ -38,70 +38,59 @@ source "$HOME/.bashrc"
 
 The ```~/.aliases``` is where all the aliases will live. Paste the contents of the aliases file into there.
 
-#### Tangent: Installing rmtrash on brew
-
-I have an ```rm``` alias overwriting the native ```rm``` command.
-
-The native ```rm``` command will non-recursively delete an item without sending it to trash, and ```rm -rf``` will forcibly & recursively delete a folder (recipe for disaster). Installing rmtrash will allow you to recursively move an item or a folder to the trash bin, a much safer way to delete things. (No need to use the ```-rf``` flag with ```rmtrash```!). I have an alias mapping ```rm``` to ```rmtrash``` to overwrite the native ```rm``` command. To use this particular alias, you have to install rmtrash.
-
-Run ```brew install rmtrash```. If this doesn't work after two tries, check the rmtrash docs.
-
-
 ### An explanation of the aliases
 
 #### Editing aliases
-This is for when you want to make your own aliases OR look back at what aliases you have. nb ('nano bash') or sb ('source bash') will open and reload the aliases file, respectively. You will no longer need to use ```atom ~/.aliases``` to access the aliases. Note that you need to source (reload) the bash profile in every terminal tab that is already open (but it will obviously apply to all future tabs)
 ```
 alias nb="atom ~/.aliases"
 alias sb="source ~/.bash_profile"
 ```
+This is for when you want to make your own aliases OR look back at what aliases you have. nb ('nano bash') or sb ('source bash') will open and reload the aliases file, respectively. You will no longer need to use ```atom ~/.aliases``` to access the aliases. Note that you need to source (reload) the bash profile in every terminal tab that is already open (but it will obviously apply to all future tabs)
 
 #### Opening atom or finder
 
-```a``` will run the familiar ```atom .```. ```o``` will open finder at the current directory. The last one will not work for you because that's just specifically how I set up my directories to git push my settings.
 ```
 alias a="atom ."
 alias o="open ."
 alias settings="atom ~/dev/atom_settings"
 ```
+```a``` will run the familiar ```atom .```. ```o``` will open finder at the current directory. The last one will not work for you because that's just specifically how I set up my directories to git push my settings.
 
 #### Navigating via terminal
-
-These commands are pretty self-explanatory. The ```aa``` alias to cd into my App Academy folder will obviously not work for you - you can change it to wherever your App Academy folder is.
 
 ```
 # NAVIGATION
 alias sl="ls"
 alias ls="ls -G"
 alias aa="cd ~/dev/appacademy"
+alias dt="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias home="cd ~"
 ```
+These commands are pretty self-explanatory. The ```aa``` alias to cd into my App Academy folder will obviously not work for you - you can change it to wherever your App Academy folder is. Same with the ```dev``` alias.
 
 #### terminal teleportation
-
-Read the docs for pushd and popd. Super interesting commands, not super crucial to learn.
 
 ```
 alias push="pushd ."
 alias pop="popd"
 ```
+Read the docs for pushd and popd. Super interesting commands, not super crucial to learn.
 
 #### rmtrash
-
-This will run the aforementioned brew package.
 
 ```
 alias rm="rmtrash"
 ```
+The native ```rm``` command will non-recursively delete an item without sending it to trash, and ```rm -rf``` will forcibly & recursively delete a folder (recipe for disaster). Installing rmtrash will allow you to recursively move an item or a folder to the trash bin, a much safer way to delete things. (No need to use the ```-rf``` flag with ```rmtrash```!). I have an alias mapping ```rm``` to ```rmtrash``` to overwrite the native ```rm``` command. To use this particular alias, you have to install rmtrash.
+
+Run ```brew install rmtrash```. If this doesn't work after two tries, check the rmtrash docs. (Also ensure that you have homebrew installed).
+
 
 #### Ruby and Rails commands
-
-Not used very frequently but still nice to have.
-
 ```
 # RUBY
 alias irb="pry"
@@ -119,15 +108,17 @@ alias rdbr="rails db:reset"
 alias rdbd="rails db:drop"
 alias rgc="rails g controller"
 ```
+Self-explanatory.
+
 
 #### MY SERVER IS SEVERED! PANIC!
-
-In the rare event that the server is disconnected improperly and I get a "something is already running on :3000" error when I rails s, I have to run this to fix it.
-
 ```
 #KILL SERVER
 alias rk="kill -9 $(lsof -i tcp:3000 -t)"
 ```
+
+In the rare event that the server is disconnected improperly and I get a "something is already running on :3000" error when I rails s, I have to run this to fix it.
+
 
 #### Git & NPM commands
 
@@ -136,7 +127,6 @@ Making a commit is as simple as chaining ```gs```-```ga.```-```gs```-```gcm "mes
 The ```author``` alias is a shortcut for fixing the authorship history of a git. Replace my name and email with your name and emails. Or you could make me the author of your repos, that's fine too.
 
 ```npm.```: "Is there a better way to run npm install --save package package package...???" Yes.
-
 ```
 # GIT
 alias gi="git init"

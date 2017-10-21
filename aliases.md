@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SO META THAT YOU MAP THESE THINGS
+# Open and load aliases file
 alias nb="atom ~/.aliases"
 alias sb="source ~/.bash_profile"
 
@@ -13,6 +13,7 @@ alias settings="atom ~/dev/atom_settings"
 alias sl="ls"
 alias ls="ls -G"
 alias aa="cd ~/dev/appacademy"
+alias dt="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias ..="cd .."
 alias ...="cd ../.."
