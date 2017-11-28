@@ -16,6 +16,8 @@ Tip: press cmd + , to access atom preferences
 * ruby-block: when you select an 'end', it shows the corresponding start of the block. Helpful for complicated nests.
   * Highlight Line Number: true
   * Show Bottom Panel: false
+* atom-bracket-highlight: I recommend changing the LESS file because the flash transition can get annoying
+* bracket-padder
 
 #### Core Packages
 * autocomplete-plus:

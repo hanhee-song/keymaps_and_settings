@@ -38,8 +38,10 @@ alias rgm="rails g model"
 alias rdbr="rails db:reset"
 alias rdbd="rails db:drop"
 alias rgc="rails g controller"
+alias rs="rails s"
+alias rc="rails c"
 #KILL SERVER
-alias rk="kill -9 $(lsof -i tcp:3000 -t)"
+alias rk="sudo kill -9 $(lsof -i :3000 -t)"
 
 # GIT
 alias gi="git init"
@@ -48,14 +50,24 @@ alias ga="git add"
 alias ga.="git add ."
 alias gcm="git commit -m"
 alias gp="git push"
+alias gb="git branch"
+alias gc="git checkout"
+alias gcb="git checkout -b"
 alias gl="git log"
 alias gc="git clone"
 alias gr="git reset"
+alias gm="git merge"
 alias author="git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';\" HEAD"
 alias grm="git rm --cached"
 
+# FIGARO
+alias fig="figaro heroku:set -e production"
+
 # NPM
 alias npm.="npm install --save webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react redux react-redux redux-devtools lodash redux-thunk redux-logger"
+
+#FLUSH CACHE
+alias flush="sudo killall -HUP mDNSResponder"
 
 # make `g` behave like `git status` with no args, or `git` with args
 g () {
