@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Convert px to REM
+# alias rem="perl -p -i -e 's/(\d+)px/($1\/16).rem/ge' styles/style.css"
+# You need to provide a file as an arg
+
+# PYTHON
+alias py="python3.6"
+
 # Open and load aliases file
 alias nb="atom ~/.aliases"
 alias sb="source ~/.bash_profile"
@@ -12,7 +19,7 @@ alias settings="atom ~/dev/atom_settings"
 # NAVIGATION
 alias sl="ls"
 alias ls="ls -G"
-alias aa="cd ~/dev/appacademy"
+alias d="cd ~/dev"
 alias dt="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias ..="cd .."
@@ -53,8 +60,9 @@ alias gp="git push"
 alias gb="git branch"
 alias gc="git checkout"
 alias gcb="git checkout -b"
+alias gch="git checkout"
 alias gl="git log"
-alias gc="git clone"
+alias gcl="git clone"
 alias gr="git reset"
 alias gm="git merge"
 alias author="git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';\" HEAD"
