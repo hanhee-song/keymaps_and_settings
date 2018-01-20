@@ -5,7 +5,6 @@
 # You need to provide a file as an arg
 
 # POSTGRES
-
 alias rmpid="rm ~/Library/Application\ Support/Postgres/var-9.6/postmaster.pid"
 
 # PYTHON
@@ -19,10 +18,12 @@ alias sb="source ~/.bash_profile"
 alias a="atom ."
 alias o="open ."
 alias settings="atom ~/dev/atom_settings"
+function md() { mkdir -p "$@" && cd "$_"; }
 
 # NAVIGATION
 alias sl="ls"
 alias ls="ls -G"
+alias aa="cd ~/dev/appacademy"
 alias d="cd ~/dev"
 alias dt="cd ~/Desktop"
 alias dev="cd ~/dev"
@@ -60,7 +61,9 @@ alias gs="git status"
 alias ga="git add"
 alias ga.="git add ."
 alias gcm="git commit -m"
+alias gca="git commit --amend"
 alias gp="git push"
+alias gph="git push heroku master"
 alias gb="git branch"
 alias gc="git checkout"
 alias gcb="git checkout -b"
