@@ -79,7 +79,8 @@ alias grm="git rm --cached"
 alias fig="figaro heroku:set -e production"
 
 # NPM
-alias npm.="npm install --save webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react redux react-redux redux-devtools lodash redux-thunk redux-logger"
+alias npm.="npm install --save webpack react react-dom babel-core babel-loader babel-preset-env babel-preset-react redux react-redux redux-devtools lodash redux-thunk redux-logger"
+alias nr="npm run"
 
 #FLUSH CACHE
 alias flush="sudo killall -HUP mDNSResponder"
