@@ -56,7 +56,6 @@ The native ```rm``` command will non-recursively delete an item without sending 
 
 Run ```brew install rmtrash```. If this doesn't work after two tries, check the rmtrash docs. (Also ensure that you have homebrew installed).
 
-#### MY SERVER IS SEVERED! PANIC!
 ```
 #KILL SERVER
 alias rk="kill -9 $(lsof -i tcp:3000 -t)"
