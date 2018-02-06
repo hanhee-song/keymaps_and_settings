@@ -47,40 +47,7 @@ alias sb="source ~/.bash_profile"
 ```
 This is for when you want to make your own aliases OR look back at what aliases you have. nb ('nano bash') or sb ('source bash') will open and reload the aliases file, respectively. You will no longer need to use ```atom ~/.aliases``` to access the aliases. Note that you need to source (reload) the bash profile in every terminal tab that is already open (but it will obviously apply to all future tabs)
 
-#### Opening atom or finder
-
-```
-alias a="atom ."
-alias o="open ."
-alias settings="atom ~/dev/atom_settings"
-```
-```a``` will run the familiar ```atom .```. ```o``` will open finder at the current directory. The last one will not work for you because that's just specifically how I set up my directories to git push my settings.
-
-#### Navigating via terminal
-
-```
-# NAVIGATION
-alias sl="ls"
-alias ls="ls -G"
-alias aa="cd ~/dev/appacademy"
-alias dt="cd ~/Desktop"
-alias dev="cd ~/dev"
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias home="cd ~"
-```
-These commands are pretty self-explanatory. The ```aa``` alias to cd into my App Academy folder will obviously not work for you - you can change it to wherever your App Academy folder is. Same with the ```dev``` alias.
-
-#### terminal teleportation
-
-```
-alias push="pushd ."
-alias pop="popd"
-```
-Read the docs for pushd and popd. Super interesting commands, not super crucial to learn.
-
-#### rmtrash
+#### Special Notes on Aliases
 
 ```
 alias rm="rmtrash"
@@ -89,69 +56,14 @@ The native ```rm``` command will non-recursively delete an item without sending 
 
 Run ```brew install rmtrash```. If this doesn't work after two tries, check the rmtrash docs. (Also ensure that you have homebrew installed).
 
-
-#### Ruby and Rails commands
-```
-# RUBY
-alias irb="pry"
-alias be="bundle exec"
-alias ber="bundle exec rspec"
-alias bi="bundle install"
-
-# RAILS
-alias rdbm="rails db:migrate"
-alias rdbc="rails db:create"
-alias rgmg="rails g migration"
-alias rgmd="rails g model"
-alias rgm="rails g model"
-alias rdbr="rails db:reset"
-alias rdbd="rails db:drop"
-alias rgc="rails g controller"
-```
-Self-explanatory.
-
-
 #### MY SERVER IS SEVERED! PANIC!
 ```
 #KILL SERVER
 alias rk="kill -9 $(lsof -i tcp:3000 -t)"
 ```
 
-In the rare event that the server is disconnected improperly and I get a "something is already running on :3000" error when I rails s, I have to run this to fix it.
-
-
-#### Git & NPM commands
+In the rare event that the server is disconnected improperly and I get a "something is already running on :3000" error when I rails s, I have to run this to fix it. Sometimes, the alias itself doesn't work but copy-pasting this code into terminal works. Weird stuff.
 
 Making a commit is as simple as chaining ```gs```-```ga.```-```gs```-```gcm "message"```-```gp```.
 
 The ```author``` alias is a shortcut for fixing the authorship history of a git. Replace my name and email with your name and emails. Or you could make me the author of your repos, that's fine too.
-
-```npm.```: "Is there a better way to run npm install --save package package package...???" Yes.
-```
-# GIT
-alias gi="git init"
-alias gs="git status"
-alias ga="git add"
-alias ga.="git add ."
-alias gcm="git commit -m"
-alias gp="git push"
-alias gl="git log"
-alias gc="git clone"
-alias gr="git reset"
-alias author="git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';\" HEAD"
-alias grm="git rm --cached"
-
-# NPM
-alias npm.="npm install --save webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react redux react-redux redux-devtools lodash redux-thunk redux-logger"
-
-# make `g` behave like `git status` with no args, or `git` with args
-g () {
-  if [ $# -eq 0 ]
-  then
-    git status
-  else
-    git "$@"
-  fi
-}
-__git_complete g _git
-```
