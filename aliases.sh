@@ -23,9 +23,8 @@ function md() { mkdir -p "$@" && cd "$_"; }
 # NAVIGATION
 alias sl="ls"
 alias ls="ls -G"
-alias aa="cd ~/dev/appacademy"
-alias d="cd ~/dev"
 alias dt="cd ~/Desktop"
+alias d="cd ~/dev"
 alias dev="cd ~/dev"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -80,8 +79,8 @@ alias grm="git rm --cached"
 alias fig="figaro heroku:set -e production"
 
 # NPM
-alias npm.="npm install --save webpack react react-dom babel-core babel-loader babel-preset-env babel-preset-react redux react-redux redux-devtools lodash redux-thunk redux-logger"
 alias nr="npm run"
+alias ni="npm install"
 
 #FLUSH CACHE
 alias flush="sudo killall -HUP mDNSResponder"
