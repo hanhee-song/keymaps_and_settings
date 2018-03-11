@@ -17,8 +17,9 @@ alias sb="source ~/.bash_profile"
 # OPENING APPS
 alias a="atom ."
 alias o="open ."
-alias settings="atom ~/dev/atom_settings"
+alias settings="cd ~/dev/atom_settings"
 function md() { mkdir -p "$@" && cd "$_"; }
+alias size="du -sh */"
 
 # NAVIGATION
 alias sl="ls"
@@ -69,10 +70,11 @@ alias gc="git checkout"
 alias gcb="git checkout -b"
 alias gch="git checkout"
 alias gl="git log"
+alias gd="git diff"
 alias gcl="git clone"
 alias gr="git reset"
 alias gm="git merge"
-alias author="git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';\" HEAD"
+# alias author="git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='Hanhee Song'; GIT_AUTHOR_EMAIL='song.hanhee@gmail.com'; GIT_COMMITTER_NAME='Hanhee Song'; GIT_COMMITTER_EMAIL='song.hanhee@gmail.com';\" HEAD"
 alias grm="git rm --cached"
 
 # FIGARO
