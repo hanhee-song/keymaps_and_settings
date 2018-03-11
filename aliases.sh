@@ -19,7 +19,8 @@ alias a="atom ."
 alias o="open ."
 alias settings="cd ~/dev/atom_settings"
 function md() { mkdir -p "$@" && cd "$_"; }
-alias size="du -sh */"
+alias size='ECHO "FOLDERS =======" && du -sh */ && ECHO "ALL ===========" && du -sh *'
+
 
 # NAVIGATION
 alias sl="ls"
