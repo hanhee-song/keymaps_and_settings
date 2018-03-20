@@ -17,17 +17,17 @@ alias sb="source ~/.bash_profile"
 # OPENING APPS
 alias a="atom ."
 alias o="open ."
-alias settings="cd ~/dev/atom_settings"
+alias settings="lushd . && cd ~/dev/atom_settings"
 function md() { mkdir -p "$@" && cd "$_"; }
 alias size='ECHO "FOLDERS =======" && du -sh */ && ECHO "ALL ===========" && du -sh *'
-
+alias c="code ."
+alias code="code ."
 
 # NAVIGATION
 alias sl="ls"
 alias ls="ls -G"
 alias dt="cd ~/Desktop"
-alias d="cd ~/dev"
-alias dev="cd ~/dev"
+alias d="pushd . && cd ~/dev"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
