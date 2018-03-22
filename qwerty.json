@@ -3,6 +3,13 @@
   "BTTPresetUUID" : "B2CC20D9-6E39-4F67-8148-28DCC4C8C626",
   "BTTPresetContent" : [
     {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
       "BTTAppSpecificSettings" : {
@@ -13,97 +20,12 @@
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : -1,
           "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,13",
+          "BTTShortcutToSend" : "55,3",
           "BTTTriggerOnDown" : 1,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 13,
+          "BTTShortcutKeyCode" : 3,
           "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 24,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarItemIconHeight" : 0,
-            "BTTTouchBarItemIconWidth" : 0
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,17",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 17,
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 22,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarItemIconHeight" : 0,
-            "BTTTouchBarItemIconWidth" : 0
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,9",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 9,
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 23,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarItemIconHeight" : 0,
-            "BTTTouchBarItemIconWidth" : 0
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,8",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 8,
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 19,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarItemIconHeight" : 0,
-            "BTTTouchBarItemIconWidth" : 0
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,0",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 0,
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 18,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarItemIconHeight" : 0,
-            "BTTTouchBarItemIconWidth" : 0
-          }
-        },
-        {
-          "BTTTriggerType" : 21,
-          "BTTTriggerTypeDescription" : "3 Finger Click",
-          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
-          "BTTPredefinedActionType" : 1,
-          "BTTPredefinedActionName" : "Middle Click",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0,
-          "BTTAlternateIconData" : ""
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,6",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 6,
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 26,
+          "BTTOrder" : 20,
           "BTTTriggerConfig" : {
             "BTTTouchBarItemIconHeight" : 0,
             "BTTTouchBarItemIconWidth" : 0
@@ -138,12 +60,27 @@
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : -1,
           "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,7",
+          "BTTShortcutToSend" : "55,6",
           "BTTTriggerOnDown" : 1,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 7,
+          "BTTShortcutKeyCode" : 6,
           "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 25,
+          "BTTOrder" : 26,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarItemIconHeight" : 0,
+            "BTTTouchBarItemIconWidth" : 0
+          }
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,17",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 17,
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 22,
           "BTTTriggerConfig" : {
             "BTTTouchBarItemIconHeight" : 0,
             "BTTTouchBarItemIconWidth" : 0
@@ -160,6 +97,36 @@
           "BTTAlternateIconData" : ""
         },
         {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,8",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 8,
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 19,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarItemIconHeight" : 0,
+            "BTTTouchBarItemIconWidth" : 0
+          }
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,9",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 9,
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 23,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarItemIconHeight" : 0,
+            "BTTTouchBarItemIconWidth" : 0
+          }
+        },
+        {
           "BTTTriggerType" : 1002,
           "BTTTriggerTypeDescription" : "Middle Mouse Button",
           "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -174,24 +141,57 @@
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : -1,
           "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "55,3",
+          "BTTShortcutToSend" : "55,13",
           "BTTTriggerOnDown" : 1,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 3,
+          "BTTShortcutKeyCode" : 13,
           "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 20,
+          "BTTOrder" : 24,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarItemIconHeight" : 0,
+            "BTTTouchBarItemIconWidth" : 0
+          }
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,7",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 7,
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 25,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarItemIconHeight" : 0,
+            "BTTTouchBarItemIconWidth" : 0
+          }
+        },
+        {
+          "BTTTriggerType" : 21,
+          "BTTTriggerTypeDescription" : "3 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTPredefinedActionType" : 1,
+          "BTTPredefinedActionName" : "Middle Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0,
+          "BTTAlternateIconData" : ""
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,0",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 0,
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 18,
           "BTTTriggerConfig" : {
             "BTTTouchBarItemIconHeight" : 0,
             "BTTTouchBarItemIconWidth" : 0
           }
         }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTTriggers" : [
-
       ]
     },
     {
