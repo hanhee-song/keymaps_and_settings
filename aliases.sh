@@ -17,7 +17,7 @@ alias sb="source ~/.bash_profile"
 # OPENING APPS
 alias a="atom ."
 alias o="open ."
-alias settings="pushd . && cd ~/dev/atom_settings"
+alias settings="pushd . && cd ~/dev/settings"
 function md() { mkdir -p "$@" && cd "$_"; }
 alias size='ECHO "FOLDERS =======" && du -sh */ && ECHO "ALL ===========" && du -sh *'
 alias c="code ."
