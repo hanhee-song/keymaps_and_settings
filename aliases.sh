@@ -6,7 +6,8 @@
 
 # JAVA
 # GRADLE
-alias b="./gradlew build"
+alias jb="./gradlew build"
+alias jr="./gradlew bootRun"
 
 # POSTGRES
 alias rmpid="rm ~/Library/Application\ Support/Postgres/var-9.6/postmaster.pid"
@@ -27,7 +28,7 @@ alias size='ECHO "FOLDERS =======" && du -sh */ && ECHO "ALL ===========" && du 
 alias c="code ."
 
 # NAVIGATION
-alias sl="ls"
+alias l="ls"
 alias ls="ls -G"
 alias dt="cd ~/Desktop"
 alias d="pushd . && cd ~/dev"
