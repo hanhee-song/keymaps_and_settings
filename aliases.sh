@@ -4,6 +4,10 @@
 # alias rem="perl -p -i -e 's/(\d+)px/($1\/16).rem/ge' styles/style.css"
 # You need to provide a file as an arg
 
+# JAVA
+# GRADLE
+alias b="./gradlew build"
+
 # POSTGRES
 alias rmpid="rm ~/Library/Application\ Support/Postgres/var-9.6/postmaster.pid"
 
