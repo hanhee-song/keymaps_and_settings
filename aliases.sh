@@ -9,6 +9,9 @@
 alias jb="./gradlew build"
 alias jr="./gradlew bootRun"
 
+# MAVEN
+alias mr="./mvnw spring-boot:run"
+
 # POSTGRES
 alias rmpid="rm ~/Library/Application\ Support/Postgres/var-9.6/postmaster.pid"
 
